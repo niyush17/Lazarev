@@ -71,6 +71,33 @@ nav.addEventListener('mouseleave',()=>{
 navAnimation()
 
 
+function loadAnimations(){
+    var tl = gsap.timeline()
+
+tl.from("#page1,#page2",{
+    opacity:0,
+    duration:0.2,
+    delay:-0.2,
+})
+
+tl.from("#page1,#page2",{
+    transform:"scaleX(0.7) scaleY(1) translateY(100%)",
+    borderRadius:"150px",
+    duration:1,
+    ease:"expo.out"
+})
+
+tl.from("nav",{
+    opacity:0,
+})
+tl.from("#page1 h1, #page1 p,#page1 div,#page2 p,#page2 h5,#page2 .right-elem",{
+    opacity:0,
+    duration:0.5,
+    stagger:0.2,
+})
+}
+loadAnimations()
+
 function page2Animation(){
     var rightElems = document.querySelectorAll(".right-elem")
 
@@ -176,30 +203,5 @@ function page6Animations(){
 page6Animations()
 
 
-function loadAnimations(){
-    var tl = gsap.timeline()
 
-tl.from("#page1",{
-    opacity:0,
-    duration:0.2,
-    delay:-0.2,
-})
-
-tl.from("#page1",{
-    transform:"scaleX(0.7) scaleY(0.2) translateY(80%)",
-    borderRadius:"150px",
-    duration:2,
-    ease:"expo.out"
-})
-
-tl.from("nav",{
-    opacity:0,
-})
-tl.from("#page1 h1, #page1 p,#page1 div",{
-    opacity:0,
-    duration:0.5,
-    stagger:0.2,
-})
-}
-loadAnimations()
 
