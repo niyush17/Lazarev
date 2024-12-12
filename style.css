@@ -935,8 +935,19 @@ summary{
         height: 3vw;
         margin-left: 1.6vw;
     }
+
+    #nav-bottom {
+        width: 92%;
+        height: 0vh;
+        position: absolute;
+        background-color: #111;
+        top: 100%;
+        z-index: 9;
+        left: 5%;
+        border-bottom: 1px solid #ffff;
+    }
     .nav-part2{
-        gap:3.4vw;
+        gap:3vw;
     }
 
     nav>h1{

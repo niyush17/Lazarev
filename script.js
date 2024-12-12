@@ -170,7 +170,7 @@ function page6Animations(){
         x:0,
         duration:1,
         scrollTrigger:{
-            trigger:"#btm6-part2",
+            trigger:"#page6-bottom",
             scroller:"#main",
             start:"top 80%",
             end:"top 0%",
