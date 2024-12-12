@@ -12,10 +12,6 @@ body {
     height: 100%;
 }
 
-body{
-    overflow: hidden;
-}
-
 nav{
     position: fixed;
     background-color: #111;
