@@ -39,7 +39,7 @@ function navAnimation(){
 nav.addEventListener('mouseenter',()=>{
     let tl = gsap.timeline()
     tl.to("#nav-bottom",{
-        height:"21vh"
+        height:"20vh"
     })
     tl.to("nav h5",{
         display:"block"
