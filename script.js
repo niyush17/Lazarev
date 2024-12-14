@@ -80,7 +80,7 @@ tl.from("#page1,#page2",{
     delay:-0.2,
 })
 
-tl.from("#page1,#page2",{
+tl.from("#main",{
     transform:"scaleX(0.7) scaleY(1) translateY(100%)",
     borderRadius:"150px",
     duration:1,
